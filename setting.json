@@ -1,0 +1,137 @@
+{
+    "workbench.iconTheme": "vscode-icons",
+    "terminal.integrated.shell.windows": "D:/Git/bin/bash.exe",
+    // 编辑器设置
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true,
+        "source.fixAll.stylelint": true
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+    /**
+     *  @Extension  Vetur
+     *  @Version  0.24.0
+     *  @Description  专注于.vue文件的语法高亮与智能提示
+     *
+     *  @Tip    Vetur是一个多功能集合插件，包含了语法高亮、代码检测与格式化、
+     *  以及智能提示等。代码检测与格式化与当前ESLint|Stylelint|Prettier功能重叠，
+     *  不关闭的情况下可能导致不同的格式化(多人开发)，因此关闭代码检测与格式化。
+     *  如下：
+     */
+    "vetur.format.enable": false,
+    "vetur.validation.template": false,
+    "vetur.validation.script": false,
+    "vetur.validation.style": false,
+
+    /**
+     *  @Extension ESLint
+     *  @Version  2.1.8
+     *  @Description 专注于代码质量的规范
+     *
+     *  @Tip    7.x版本不同于6.x及以下版本，ESLint@6.x版本库使用当前配置可能导致
+     *  格式化失败(ESLint实例化失败，由于某些配置缺失|配置值数据类型不一致)，
+     *  详情见终端面板OUTPUT输出日志。
+     */
+    "eslint.enable": true,
+    "eslint.alwaysShowStatus": true,
+    "eslint.trace.server": "verbose",
+    "eslint.debug": false,
+    "eslint.lintTask.enable": false,
+    "eslint.lintTask.options": ".",
+    "eslint.packageManager": "npm",
+    "eslint.options": {
+        // File Enumeration
+        "errorOnUnmatchedPattern": true,
+        "extensions": null,
+        "globInputPaths": true,
+        "igonre": true,
+        "ignorePath": null,
+
+        // Linting
+        "allowInlineConfig": true,
+        "baseConfig": null,
+        "overrideConfig": null,
+        "overrideConfigFile": null,
+        "plugins": [],
+        "reportUnusedDisableDirectives": null,
+        "resolvePluginsRelativeTo": null,
+        "rulePaths": [],
+        "useEslintrc": true,
+
+        // Autofix
+        "fix": false,
+        "fixTypes": null,
+
+        // Cache-related
+        "cache": false,
+        "cacheLocation": ".eslintcache",
+        "cacheStrategy": "metadata"
+    },
+    "eslint.run": "onType",
+    "eslint.quiet": false,
+    "eslint.runtime": null,
+    "eslint.nodePath": null,
+    "eslint.probe": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "html",
+        "vue",
+        "markdown"
+    ],
+    "eslint.validate": [],
+    "eslint.format.enable": false,
+    "eslint.workingDirectories": [],
+    "eslint.codeAction.disableRuleComment": {
+        "enable": true,
+        "location": "separateLine"
+    },
+    "eslint.codeAction.showDocumentation": {
+        "enable": true
+    },
+    "eslint.codeActionsOnSave.mode": "all",
+    "eslint.onIgnoredFiles": "off",
+
+    /**
+     *  @Extension  Stylelint
+     *  @Version    0.86.0
+     *  @Description 专注于统一的样式规则规范
+     */
+    "stylelint.enable": true, 
+    // 关闭VS Code编辑器内置的样式规则检测规范，避免与Stylelint的检测规范重复|冲突
+    "css.validate": false,
+    "less.validate": false,
+    "scss.validate": false,
+
+    /**
+     * @Extension Prettier
+     * @Version 5.5.0
+     * Description 专注于代码风格的规范
+     */
+    "prettier.enable": true,
+    "prettier.printWidth": 1000,
+    "prettier.tabWidth": 4,
+    "prettier.useTabs": false,
+    "prettier.semi": false,
+    "prettier.singleQuote": true,
+    "prettier.quoteProps": "as-needed",
+    "prettier.jsxSingleQuote": false,
+    "prettier.trailingComma": "none",
+    "prettier.bracketSpacing": true,
+    "prettier.jsxBracketSameLine": false,
+    "prettier.arrowParens": "always",
+    "prettier.vueIndentScriptAndStyle": false,
+    "prettier.endOfLine": "lf",
+    "prettier.embeddedLanguageFormatting": "auto",
+    "prettier.useEditorConfig": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "workbench.colorTheme": "One Dark Pro"
+}
